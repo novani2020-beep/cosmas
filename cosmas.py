@@ -3,7 +3,11 @@ from datetime import datetime, timezone
 import html
 import requests
 
-KEYWORDS = ["python", "automation", "scraper", "ai", "writing", "coordinator"]
+KEYWORDS = ["import re
+
+def matches_keywords(title):
+    title_lower = title.lower()
+    return any(re.search(rf"\b{re.escape(k)}\b", title_lower) for k in KEYWORDS)"]
 
 def check_remotive_jobs():
     url = "https://remotive.com/api/remote-jobs?limit=30"
